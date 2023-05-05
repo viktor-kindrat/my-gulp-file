@@ -3,13 +3,13 @@ const sass = require('gulp-sass')(require('sass'));
 const webp = require('gulp-webp');
 
 function compileStyles() {
-    return gulp.src('./**/*.scss')
+    return gulp.src(['./**/*.scss', '!./node_modules/**'])
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./'));
 }
 
 function convertImg() {
-    return gulp.src(['./**/*.jpg', './**/*.png', './**/*.jpeg'])
+    return gulp.src(['./**/*.jpg', './**/*.png', './**/*.jpeg', '!./node_modules/**'])
         .pipe(webp())
         .pipe(gulp.dest('./'))
 }
