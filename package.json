@@ -1,0 +1,17 @@
+{
+  "name": "my-gulp-file",
+  "version": "1.0.0",
+  "description": "This Gulpfile is used to compile Sass files and convert images to WebP format for the Project Name web application. It uses Gulp to automate these tasks and save time during development. The Gulpfile includes three tasks: compileStyles to compile Sass files, watchSass to watch for changes to Sass files and automatically compile them, and imgConvert to convert all images to WebP format. The Gulpfile uses gulp-sass to compile Sass files and gulp-webp to convert images to WebP format.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Viktor Kindrat\"",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.62.1"
+  }
+}
