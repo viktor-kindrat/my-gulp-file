@@ -17,6 +17,6 @@ function convertImg() {
 exports.compileStyles = compileStyles;
 
 exports.watchSass = function() {
-    gulp.watch('./**/*.scss', gulp.series('compileStyles'));
+    gulp.watch(['./src/**/*.scss'], gulp.series('compileStyles'));
 };
 exports.imgConvert = convertImg
